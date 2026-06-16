@@ -30,7 +30,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}     # ← 內建 token，免設
+          password: ${{ secrets.CONFIG_REPO_TOKEN }}     # ← 內建 token，免設
 
       - name: Build and Push
         uses: docker/build-push-action@v5
